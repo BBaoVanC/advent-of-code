@@ -4,15 +4,16 @@ import sys
 
 rawInput = sys.stdin.readlines()
 
-input = []
+strnums = []
 for line in rawInput:
-    input.append(line.strip())
+    strnums.append(line.strip())
 
-halfpoint = int(len(input) / 2)
-i1 = input[:halfpoint]
-i2 = input[halfpoint:]
+# convert to integers
+nums = []
+for num in strnums:
+    nums.append(int(num))
 
-for n1 in i1:
-    for n2 in i2:
+for n1 in nums:
+    for n2 in nums:
         if n1 + n2 == 2020:
             print(f"{n1} + {n2} = 2020")

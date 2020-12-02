@@ -16,4 +16,4 @@ for num in strnums:
 for n1 in nums:
     for n2 in nums:
         if n1 + n2 == 2020:
-            print(f"{n1} + {n2} = 2020")
+            print(f"{n1} + {n2} = 2020 | {n1} * {n2} = {n1*n2}")
